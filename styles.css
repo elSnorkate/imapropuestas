@@ -25,9 +25,83 @@ body{
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
 }
 .wrapper .title {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
     margin-bottom: 25px;
     color: #FAAE02;
     text-align: center;
+}
+.wrapper .form {
+    width: 100%;
+}
+.wrapper .form .input_field{
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+}
+.wrapper .form .input_field label{
+    width: 100%;
+    color: black;
+    font-size: 15px;
+    font-family: papeat2, sans-serif;
+}
+.wrapper .form .input_field .input,
+.wrapper .form .input_field .textarea{
+    width: 100%;
+    outline: none;
+    border: 1px solid #03033D;
+    font-size: 14px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+.wrapper .form .input_field .custom_select{
+    position: relative;
+    width: 100%;
+    height: 37px;
+}
+.wrapper .form .input_field .custom_select select {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid #F39200;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    border-radius: 3px;
+    outline: none;    
+}
+.wrapper .form .input_field .custom_select:before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #FAAE02 transparent transparent transparent;    
+    pointer-events: none;
+}
+.wrapper .form .inputfield .btn {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0;
+    background:#F39200;
+    color: #03033D;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+.wrapper .form .input_field :last-child{
+    margin-bottom: 0%;
+}
+.wrapper .form .input_field .btn:hover{
+    background: #03033D;
+}
+@media (max-width: 420px) {
+     .wrapper .form .input_field {
+        flex-direction: column;
+        display: flex-start;
+     }
+     .wrapper .form .input_field label {
+        margin-bottom: 4px;
+     }
 }
